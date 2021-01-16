@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>komplexapp-v2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body class="bg-gray-100">
+    <!-- header -->
+    <!-- Left side nav -->
+    <header class="w-full h-24 bg-gray-800">
+        <div class="container mx-auto">
+            <nav class="flex items-center justify-between p-7">
+                <span class="flex text-3xl text-white">
+                    <a href="">KonnectApp</a>
+                    <span class="w-12 mx-7">
+                        <a href=""><img src="/public/img/profile-image2.jpg" alt="profleImage"
+                                class="h-auto max-w-full align-middle border-none rounded-full shadow-lg">
+                        </a>
+                    </span>
+                    <span>
+                        <a href=""><i class="fas fa-search"></i></a>
+                    </span>
+                </span>
+                <!-- Right Side nav -->
+                <div class="flex justify-end">
+                    <span class="pt-1 pr-3 cursor-pointer" title="Chat" style="color: white"><i
+                            class="fas fa-comment-dots fa-2x"></i></span>
+                    <a class="p-2 px-4 mx-1 font-medium duration-300 ease-in-out bg-green-500 rounded-sm text-gray-50 delay-350transition hover:bg-green-600 focus:outline-none"
+                        href="#">Create Post</a>
+                    <form action="#" method="POST">
+                        <button id="loginBtn"
+                            class="p-2 px-4 mx-1 font-medium transition duration-300 ease-in-out bg-gray-500 rounded-sm delay-350 hover:bg-gray-600 focus:outline-none text-gray-50"
+                            type="submit">Sign Out</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- Main -->
+
+    <div class="flex items-center w-full bg-teal-lighter">
+        <div class="w-full px-20 py-20 m-10 bg-white rounded shadow-lg md:max-w-5xl md:mx-auto">
+            <h1 class="block w-full mb-6 text-2xl text-center text-grey-darkest">What's on your mind, John</h1>
+            <form class="md:flex md:flex-wrap md:justify-between" action="/" method="post">
+                <div class="flex flex-col mb-4 md:w-full">
+                    <label class="mb-2 text-lg font-bold tracking-wide uppercase text-grey-darkest"
+                        for="first_name">Title</label>
+                    <input class="px-3 py-2 border text-grey-darkest md:mr-2" type="text" name="first_name"
+                        id="first_name">
+                </div>
+
+                <div class="flex flex-col mb-4 md:w-full">
+                    <label class="mb-2 text-lg font-bold uppercase text-grey-darkest" for="body">Body</label>
+                    <!-- <input class="px-3 py-2 border text-grey-darkest" type="email" name="email" id="email"> -->
+                    <textarea class="outline-black" name="body" id="body" cols="30" rows="10"></textarea>
+                </div>
+
+                <button class="block p-4 mx-auto text-lg text-white uppercase rounded bg-teal hover:bg-teal-dark"
+                    type="submit">Create Account</button>
+            </form>
+            <a class="p-4 text-xl transition duration-300 ease-in-out bg-green-500 rounded-lg text-gray-50 delay-350 hover:bg-green-600 text-grey-dark hover:text-grey-darker"
+                href="/login">Save Post</a>
+        </div>
+    </div>
+    <!-- End Main -->
+</body>
+
+</html>

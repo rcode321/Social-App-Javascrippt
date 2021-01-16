@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>komplexapp-v2</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body class="bg-gray-100">
+   <!-- header -->
+   <!-- Left side nav -->
+   <header class="w-full h-24 bg-gray-800">
+      <div class="container mx-auto">
+         <nav class="flex items-center justify-between p-7">
+            <span class="flex text-3xl text-white ">
+               <a href="">KonnectApp</a>
+               <span class="w-12 mx-7">
+                  <a href=""><img src="/public/img/profile-image2.jpg" alt="profleImage"
+                        class="h-auto max-w-full align-middle border-none rounded-full shadow-lg">
+                  </a>
+               </span>
+               <span>
+                  <a href=""><i class="fas fa-search"></i></a>
+               </span>
+            </span>
+            <!-- Right Side nav -->
+            <div class="flex justify-end">
+               <span class="pt-1 pr-3 cursor-pointer" title="Chat" style="color: white"><i
+                     class="fas fa-comment-dots fa-2x"></i></span>
+               <a class="p-2 px-4 mx-1 font-medium duration-300 ease-in-out bg-green-500 rounded-sm text-gray-50 delay-350transition hover:bg-green-600 focus:outline-none"
+                  href="#">Create Post</a>
+               <form action="#" method="POST">
+                  <button id="loginBtn"
+                     class="p-2 px-4 mx-1 font-medium transition duration-300 ease-in-out bg-gray-500 rounded-sm delay-350 hover:bg-gray-600 focus:outline-none text-gray-50"
+                     type="submit">Sign Out</button>
+               </form>
+            </div>
+         </nav>
+      </div>
+   </header>
+   <!-- end header -->
+
+   <!-- Main -->
+   <div class="p-20 border-4 border-gray-600 border-dotted m-11">
+
+      <div class="container flex flex-col items-center mx-auto ">
+         <div class="">
+            <div class="flex ">
+               <span class="w-12 mx-5 ">
+                  <a href=""><img src="/public/img/profile-image2.jpg" alt="profleImage"
+                        class="h-auto max-w-full align-middle border-2 rounded-full shadow-lg border-blue-50">
+                  </a>
+               </span>
+
+
+               <span class="mt-3 text-lg pr-14">Posted by <strong>John</strong> on 1/5/2021</span>
+               <a class="mr-4 text-primary" href="#" title="Edit">
+                  <i class="mt-4 fas fa-edit fa-lg" style="color: deepskyblue;">
+                  </i>
+               </a>
+               <form class="inline mt-3" action="#" method="POST">
+                  <button class="delete-post-button" title="Delete">
+                     <i class="fas fa-trash-alt fa-lg" style="color: firebrick;">
+                     </i>
+                  </button>
+               </form>
+
+
+               <!-- <span class="mt-3 text-lg">Posted by <strong>John</strong> on 1/5/2021</span> -->
+               <!-- <i class="pl-16 pr-5 mt-4 fas fa-edit fa-lg" style="color: deepskyblue;"></i> -->
+               <!-- <i class="mt-4 fas fa-trash-alt fa-lg" style="color: firebrick;"></i> -->
+            </div>
+
+            <div class="p-5">
+               <span class="text-3xl font-medium ">This is the Title of my
+                  Post!</span>
+               <div class="mt-5 border-t-2"></div>
+               <p class="max-w-md mt-5">This is my Post. Lorem Ipsum is simply dummy text of
+                  the
+                  printing
+                  and
+                  typesetting
+                  industry. Lorem Ipsum has
+                  been the industry's standard dummy text ever since the 1500s, </p>
+            </div>
+
+         </div>
+      </div>
+   </div>
+   <!-- End Main -->
+</body>
+
+</html>

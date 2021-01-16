@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>komplexapp-v2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body class="bg-gray-100">
+    <!-- header -->
+    <!-- Left side nav -->
+    <header class="w-full h-24 bg-gray-800">
+        <div class="container mx-auto">
+            <nav class="flex items-center justify-between p-7">
+                <span class="flex text-3xl text-white ">
+                    <a href="">KonnectApp</a>
+                    <span class="w-12 mx-7">
+                        <a href=""><img src="/public/img/profile-image2.jpg" alt="profleImage"
+                                class="h-auto max-w-full align-middle border-none rounded-full shadow-lg">
+                        </a>
+                    </span>
+                    <span>
+                        <a href=""><i class="fas fa-search"></i></a>
+                    </span>
+                </span>
+                <!-- Right Side nav -->
+                <div class="flex justify-end">
+                    <span class="pt-1 pr-3 cursor-pointer" title="Chat" style="color: white"><i
+                            class="fas fa-comment-dots fa-2x"></i></span>
+                    <a class="p-2 px-4 mx-1 font-medium duration-300 ease-in-out bg-green-500 rounded-sm text-gray-50 delay-350transition hover:bg-green-600 focus:outline-none"
+                        href="#">Create Post</a>
+                    <form action="#" method="POST">
+                        <button id="loginBtn"
+                            class="p-2 px-4 mx-1 font-medium transition duration-300 ease-in-out bg-gray-500 rounded-sm delay-350 hover:bg-gray-600 focus:outline-none text-gray-50"
+                            type="submit">Sign Out</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- Main -->
+    <div class="p-20 border-4 border-yellow-500 border-dotted m-11">
+
+        <div class="container grid grid-cols-2 mx-auto">
+            <div class="flex justify-start col-span-2">
+                <span class="w-12 mx-5 ">
+                    <a href=""><img src="/public/img/profile-image2.jpg" alt="profleImage"
+                            class="h-auto max-w-full align-middle border-2 rounded-full shadow-lg border-blue-50">
+                    </a>
+                </span>
+                <span class="col-start-1 pr-5 text-2xl font-medium">John</span>
+                <!-- stop and follow button -->
+                <form class="" action="#" method="POST">
+                    <button class="px-3 py-2 bg-blue-600 rounded-lg text-gray-50">Follow <i
+                            class="fas fa-user-plus"></i>
+                    </button>
+                    <!-- <button class="px-3 py-2 bg-red-600 rounded-lg text-gray-50">Stop Following <i
+                            class="fas fa-user-times"></i></button> -->
+                </form>
+            </div>
+            <ul class="flex col-span-2 col-start-1 p-5 pt-3 list-reset">
+                <li class="mr-1 -mb-px">
+                    <a class="inline-block px-4 py-2 font-semibold bg-white border-t border-l border-r border-gray-500 rounded-t active:bg-blue-500 text-blue-dark"
+                        href="#">Post: 2</a>
+                </li>
+                <li class="mr-1 ">
+                    <a class="inline-block px-4 py-2 font-semibold bg-white border-b text-blue hover:text-blue-darker"
+                        href="#">Followers: 1</a>
+                </li>
+                <li class="mr-1 ">
+                    <a class="inline-block px-4 py-2 font-semibold bg-white border-b text-blue hover:text-blue-darker"
+                        href="#">Following: 0</a>
+                </li>
+            </ul>
+            <span class="col-start-3 row-start-1 text-3xl font-medium">This is the Title of my Post!</span>
+            <div class="col-start-3 row-start-2 border-t-2"></div>
+            <p class="max-w-md col-start-3 row-start-2 mt-5">This is my Post. Lorem Ipsum is simply dummy text of the
+                printing
+                and
+                typesetting
+                industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s, </p>
+        </div>
+    </div>
+    <!-- End Main -->
+</body>
+
+</html>

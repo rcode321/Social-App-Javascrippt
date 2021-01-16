@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>komplexapp-v2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <style>
+        .hideModal {
+            z-index: -1;
+            opacity: 0;
+            animation: hide 0.58s;
+        }
+
+        @keyframes hide {
+            from {
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                opacity: 1;
+            }
+
+            to {
+                transform: translate(-50%, -50%);
+                z-index: -1;
+                opacity: 0;
+            }
+
+        }
+
+        /*  */
+    </style>
+</head>
+
+
+
+<body class="bg-gray-100">
+
+    <!-- header -->
+
+    <header class="w-full bg-gray-800">
+        <div class="container mx-auto">
+            <nav class="flex items-center justify-between p-7">
+                <span class="text-2xl text-white">
+                    <a href="">KonnectApp</a>
+                </span>
+                <form action="#" method="POST">
+                    <input
+                        class="p-2 mx-1 rounded-sm shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-opacity-50 focus:ring-offset-blue-400"
+                        type="text" placeholder="Username" autocomplete="off">
+                    <input
+                        class="p-2 rounded-sm shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-opacity-50 focus:ring-offset-blue-400"
+                        type="password" placeholder="Password" autocomplete="off">
+                    <button id="loginBtn"
+                        class="p-2 px-4 mx-1 font-medium transition duration-300 ease-in-out bg-green-500 rounded-sm delay-350 hover:bg-green-600 focus:outline-none text-gray-50"
+                        type="submit">Log in</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- Hero  -->
+
+    <main class="container flex justify-between p-5 mx-auto mt-36">
+        <div>
+            <h1 class="text-gray-900 text-7xl mb-7">Find people <br> Make easy.</h1>
+            <p class="max-w-md leading-7 mb-7">Finding people made easy using our KomplexApp
+                tweet your post, shared your idea to the world because
+                we believe getting connected to each other is the key to
+                enjoying the internet.</p>
+            <button id="RegisterBtn"
+                class="p-4 font-medium transition duration-300 ease-in-out bg-blue-600 rounded-md delay-350 hover:bg-blue-800 focus:outline-none text-gray-50">Sign
+                up for
+                KonnekApp</button>
+        </div>
+        <div>
+            <img class="w-full bg-cover" src="img/4826449_1.svg" alt="appImage">
+        </div>
+    </main>
+
+    <!-- end Hero -->
+
+    <!-- Registrationo form -->
+
+    <div id="modal1"
+        class="absolute z-10 m-0 mr-20 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 animate-fadeIn">
+        <span id="closeBtn" class="close" title="Close Modal">
+            <i class="fas fa-window-close fa-2x" style="color: crimson; cursor: pointer;">
+            </i>
+        </span>
+        <form class=" modal-content" method="POST" action="#">
+            <div class="container flex flex-col p-20 bg-gray-200 rounded-xl">
+                <h1 class="mb-5 text-4xl font-medium text-gray-700">Sign Up</h1>
+                <p class="mb-1">Please fill in this form to create an account.</p>
+                <hr>
+
+                <label class="mb-2 text-gray-700" for="username"><b>Username</b></label>
+                <input class="p-3 mb-2 rounded-md " type="text" placeholder="Choose a username" name="username"
+                    id="username" required autocomplete="off">
+
+                <label class="mb-2 text-gray-700" for="email"><b>Email</b></label>
+                <input class="p-3 mb-2 rounded-md" type="password" placeholder="you@example.com" name="email" id="email"
+                    required autocomplete="off">
+
+                <label class="mb-2 text-gray-700" for="password"><b>Password</b></label>
+                <input class="p-3 mb-2 rounded-md" type="password" placeholder="Create a password" name="Password"
+                    id="password" required autocomplete="off">
+
+                <div>
+                    <button type="submit"
+                        class="p-3 mt-5 text-lg font-medium text-center bg-blue-600 rounded-lg cursor-pointer signupbtn text-gray-50 delay-350 hover:bg-blue-800">Sign
+                        Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="overlay" class="absolute top-0 w-full h-screen bg-gray-900 opacity-50"></div>
+    <!-- end Registration form -->
+
+    <script src="app.js"></script>
+</body>
+
+</html>
